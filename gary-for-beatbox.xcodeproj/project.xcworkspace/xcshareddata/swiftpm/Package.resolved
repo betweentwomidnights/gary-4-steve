@@ -1,0 +1,33 @@
+{
+  "originHash" : "dcbae3250957bab208736492da87bbd4642c1d1be71149482d1619d889408df8",
+  "pins" : [
+    {
+      "identity" : "fdwaveformview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fulldecent/FDWaveformView.git",
+      "state" : {
+        "revision" : "f470d434969778ede228b8041c6679bc8ae4f4e3",
+        "version" : "5.0.2"
+      }
+    },
+    {
+      "identity" : "socket.io-client-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/socketio/socket.io-client-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "175da8b5156f6b132436f0676cc84c2f6a766b6e"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream",
+      "state" : {
+        "revision" : "ac6c0fc9da221873e01bd1a0d4818498a71eef33",
+        "version" : "4.0.6"
+      }
+    }
+  ],
+  "version" : 3
+}

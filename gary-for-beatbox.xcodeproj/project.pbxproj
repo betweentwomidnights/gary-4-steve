@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD42B0E42CA269E600352666 /* gary_for_beatboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42B0E32CA269E600352666 /* gary_for_beatboxApp.swift */; };
+		BD42B0E62CA269E600352666 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42B0E52CA269E600352666 /* ContentView.swift */; };
+		BD42B0E82CA269E800352666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD42B0E72CA269E800352666 /* Assets.xcassets */; };
+		BD42B0EB2CA269E800352666 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD42B0EA2CA269E800352666 /* Preview Assets.xcassets */; };
+		BD42B0ED2CA269E800352666 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42B0EC2CA269E800352666 /* Persistence.swift */; };
+		BD42B0F02CA269E800352666 /* gary_for_beatbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD42B0EE2CA269E800352666 /* gary_for_beatbox.xcdatamodeld */; };
+		BD42B0FA2CA269E800352666 /* gary_for_beatboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42B0F92CA269E800352666 /* gary_for_beatboxTests.swift */; };
+		BD42B1042CA269E800352666 /* gary_for_beatboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42B1032CA269E800352666 /* gary_for_beatboxUITests.swift */; };
+		BD42B1062CA269E800352666 /* gary_for_beatboxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42B1052CA269E800352666 /* gary_for_beatboxUITestsLaunchTests.swift */; };
+		BDB11B532CA27B4A00602110 /* RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB11B522CA27B4A00602110 /* RecordingViewModel.swift */; };
+		BDB11B572CA289BC00602110 /* FDWaveformView in Frameworks */ = {isa = PBXBuildFile; productRef = BDB11B562CA289BC00602110 /* FDWaveformView */; };
+		BDB11B592CA29D2D00602110 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB11B582CA29D2D00602110 /* WebSocketManager.swift */; };
+		BDB11B5C2CA2A50200602110 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = BDB11B5B2CA2A50200602110 /* SocketIO */; };
+		BDB11B5E2CA3C87200602110 /* CleanUpAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB11B5D2CA3C87200602110 /* CleanUpAudio.swift */; };
+		BDB11B602CA3D4E200602110 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB11B5F2CA3D4E200602110 /* AudioPlayerManager.swift */; };
+		BDB11B622CA403C700602110 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB11B612CA403C700602110 /* SettingsView.swift */; };
+		BDB11B642CA40FA000602110 /* ProcessedAudioListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB11B632CA40FA000602110 /* ProcessedAudioListView.swift */; };
+		BDB11B662CA411D600602110 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB11B652CA411D600602110 /* Utility.swift */; };
+		BDB11B682CA412C000602110 /* ProcessedAudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB11B672CA412C000602110 /* ProcessedAudioPlayerManager.swift */; };
+		BDB11B6A2CA5554600602110 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB11B692CA5554600602110 /* ShareSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD42B0F62CA269E800352666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD42B0D82CA269E600352666 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD42B0DF2CA269E600352666;
+			remoteInfo = "gary-for-beatbox";
+		};
+		BD42B1002CA269E800352666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD42B0D82CA269E600352666 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD42B0DF2CA269E600352666;
+			remoteInfo = "gary-for-beatbox";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD42B0E02CA269E600352666 /* gary-for-beatbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gary-for-beatbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD42B0E32CA269E600352666 /* gary_for_beatboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gary_for_beatboxApp.swift; sourceTree = "<group>"; };
+		BD42B0E52CA269E600352666 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD42B0E72CA269E800352666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD42B0EA2CA269E800352666 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD42B0EC2CA269E800352666 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BD42B0EF2CA269E800352666 /* gary_for_beatbox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gary_for_beatbox.xcdatamodel; sourceTree = "<group>"; };
+		BD42B0F52CA269E800352666 /* gary-for-beatboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gary-for-beatboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD42B0F92CA269E800352666 /* gary_for_beatboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gary_for_beatboxTests.swift; sourceTree = "<group>"; };
+		BD42B0FF2CA269E800352666 /* gary-for-beatboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gary-for-beatboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD42B1032CA269E800352666 /* gary_for_beatboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gary_for_beatboxUITests.swift; sourceTree = "<group>"; };
+		BD42B1052CA269E800352666 /* gary_for_beatboxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gary_for_beatboxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BDB11B522CA27B4A00602110 /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
+		BDB11B582CA29D2D00602110 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		BDB11B5D2CA3C87200602110 /* CleanUpAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanUpAudio.swift; sourceTree = "<group>"; };
+		BDB11B5F2CA3D4E200602110 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		BDB11B612CA403C700602110 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BDB11B632CA40FA000602110 /* ProcessedAudioListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedAudioListView.swift; sourceTree = "<group>"; };
+		BDB11B652CA411D600602110 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		BDB11B672CA412C000602110 /* ProcessedAudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedAudioPlayerManager.swift; sourceTree = "<group>"; };
+		BDB11B692CA5554600602110 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD42B0DD2CA269E600352666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB11B572CA289BC00602110 /* FDWaveformView in Frameworks */,
+				BDB11B5C2CA2A50200602110 /* SocketIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD42B0F22CA269E800352666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD42B0FC2CA269E800352666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD42B0D72CA269E600352666 = {
+			isa = PBXGroup;
+			children = (
+				BD42B0E22CA269E600352666 /* gary-for-beatbox */,
+				BD42B0F82CA269E800352666 /* gary-for-beatboxTests */,
+				BD42B1022CA269E800352666 /* gary-for-beatboxUITests */,
+				BD42B0E12CA269E600352666 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD42B0E12CA269E600352666 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD42B0E02CA269E600352666 /* gary-for-beatbox.app */,
+				BD42B0F52CA269E800352666 /* gary-for-beatboxTests.xctest */,
+				BD42B0FF2CA269E800352666 /* gary-for-beatboxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD42B0E22CA269E600352666 /* gary-for-beatbox */ = {
+			isa = PBXGroup;
+			children = (
+				BD42B0E32CA269E600352666 /* gary_for_beatboxApp.swift */,
+				BDB11B522CA27B4A00602110 /* RecordingViewModel.swift */,
+				BDB11B5F2CA3D4E200602110 /* AudioPlayerManager.swift */,
+				BDB11B582CA29D2D00602110 /* WebSocketManager.swift */,
+				BDB11B612CA403C700602110 /* SettingsView.swift */,
+				BDB11B632CA40FA000602110 /* ProcessedAudioListView.swift */,
+				BDB11B672CA412C000602110 /* ProcessedAudioPlayerManager.swift */,
+				BDB11B652CA411D600602110 /* Utility.swift */,
+				BDB11B692CA5554600602110 /* ShareSheet.swift */,
+				BD42B0E52CA269E600352666 /* ContentView.swift */,
+				BD42B0E72CA269E800352666 /* Assets.xcassets */,
+				BDB11B5D2CA3C87200602110 /* CleanUpAudio.swift */,
+				BD42B0EC2CA269E800352666 /* Persistence.swift */,
+				BD42B0EE2CA269E800352666 /* gary_for_beatbox.xcdatamodeld */,
+				BD42B0E92CA269E800352666 /* Preview Content */,
+			);
+			path = "gary-for-beatbox";
+			sourceTree = "<group>";
+		};
+		BD42B0E92CA269E800352666 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BD42B0EA2CA269E800352666 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD42B0F82CA269E800352666 /* gary-for-beatboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD42B0F92CA269E800352666 /* gary_for_beatboxTests.swift */,
+			);
+			path = "gary-for-beatboxTests";
+			sourceTree = "<group>";
+		};
+		BD42B1022CA269E800352666 /* gary-for-beatboxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD42B1032CA269E800352666 /* gary_for_beatboxUITests.swift */,
+				BD42B1052CA269E800352666 /* gary_for_beatboxUITestsLaunchTests.swift */,
+			);
+			path = "gary-for-beatboxUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD42B0DF2CA269E600352666 /* gary-for-beatbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD42B1092CA269E800352666 /* Build configuration list for PBXNativeTarget "gary-for-beatbox" */;
+			buildPhases = (
+				BD42B0DC2CA269E600352666 /* Sources */,
+				BD42B0DD2CA269E600352666 /* Frameworks */,
+				BD42B0DE2CA269E600352666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gary-for-beatbox";
+			packageProductDependencies = (
+				BDB11B562CA289BC00602110 /* FDWaveformView */,
+				BDB11B5B2CA2A50200602110 /* SocketIO */,
+			);
+			productName = "gary-for-beatbox";
+			productReference = BD42B0E02CA269E600352666 /* gary-for-beatbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD42B0F42CA269E800352666 /* gary-for-beatboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD42B10C2CA269E800352666 /* Build configuration list for PBXNativeTarget "gary-for-beatboxTests" */;
+			buildPhases = (
+				BD42B0F12CA269E800352666 /* Sources */,
+				BD42B0F22CA269E800352666 /* Frameworks */,
+				BD42B0F32CA269E800352666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD42B0F72CA269E800352666 /* PBXTargetDependency */,
+			);
+			name = "gary-for-beatboxTests";
+			productName = "gary-for-beatboxTests";
+			productReference = BD42B0F52CA269E800352666 /* gary-for-beatboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD42B0FE2CA269E800352666 /* gary-for-beatboxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD42B10F2CA269E800352666 /* Build configuration list for PBXNativeTarget "gary-for-beatboxUITests" */;
+			buildPhases = (
+				BD42B0FB2CA269E800352666 /* Sources */,
+				BD42B0FC2CA269E800352666 /* Frameworks */,
+				BD42B0FD2CA269E800352666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD42B1012CA269E800352666 /* PBXTargetDependency */,
+			);
+			name = "gary-for-beatboxUITests";
+			productName = "gary-for-beatboxUITests";
+			productReference = BD42B0FF2CA269E800352666 /* gary-for-beatboxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD42B0D82CA269E600352666 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					BD42B0DF2CA269E600352666 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					BD42B0F42CA269E800352666 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BD42B0DF2CA269E600352666;
+					};
+					BD42B0FE2CA269E800352666 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BD42B0DF2CA269E600352666;
+					};
+				};
+			};
+			buildConfigurationList = BD42B0DB2CA269E600352666 /* Build configuration list for PBXProject "gary-for-beatbox" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD42B0D72CA269E600352666;
+			packageReferences = (
+				BDB11B552CA289BC00602110 /* XCRemoteSwiftPackageReference "FDWaveformView" */,
+				BDB11B5A2CA2A3AF00602110 /* XCRemoteSwiftPackageReference "socket" */,
+			);
+			productRefGroup = BD42B0E12CA269E600352666 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD42B0DF2CA269E600352666 /* gary-for-beatbox */,
+				BD42B0F42CA269E800352666 /* gary-for-beatboxTests */,
+				BD42B0FE2CA269E800352666 /* gary-for-beatboxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD42B0DE2CA269E600352666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD42B0EB2CA269E800352666 /* Preview Assets.xcassets in Resources */,
+				BD42B0E82CA269E800352666 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD42B0F32CA269E800352666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD42B0FD2CA269E800352666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD42B0DC2CA269E600352666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD42B0ED2CA269E800352666 /* Persistence.swift in Sources */,
+				BDB11B5E2CA3C87200602110 /* CleanUpAudio.swift in Sources */,
+				BD42B0E62CA269E600352666 /* ContentView.swift in Sources */,
+				BDB11B662CA411D600602110 /* Utility.swift in Sources */,
+				BDB11B622CA403C700602110 /* SettingsView.swift in Sources */,
+				BDB11B6A2CA5554600602110 /* ShareSheet.swift in Sources */,
+				BDB11B532CA27B4A00602110 /* RecordingViewModel.swift in Sources */,
+				BD42B0F02CA269E800352666 /* gary_for_beatbox.xcdatamodeld in Sources */,
+				BDB11B602CA3D4E200602110 /* AudioPlayerManager.swift in Sources */,
+				BD42B0E42CA269E600352666 /* gary_for_beatboxApp.swift in Sources */,
+				BDB11B642CA40FA000602110 /* ProcessedAudioListView.swift in Sources */,
+				BDB11B682CA412C000602110 /* ProcessedAudioPlayerManager.swift in Sources */,
+				BDB11B592CA29D2D00602110 /* WebSocketManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD42B0F12CA269E800352666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD42B0FA2CA269E800352666 /* gary_for_beatboxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD42B0FB2CA269E800352666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD42B1042CA269E800352666 /* gary_for_beatboxUITests.swift in Sources */,
+				BD42B1062CA269E800352666 /* gary_for_beatboxUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD42B0F72CA269E800352666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD42B0DF2CA269E600352666 /* gary-for-beatbox */;
+			targetProxy = BD42B0F62CA269E800352666 /* PBXContainerItemProxy */;
+		};
+		BD42B1012CA269E800352666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD42B0DF2CA269E600352666 /* gary-for-beatbox */;
+			targetProxy = BD42B1002CA269E800352666 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BD42B1072CA269E800352666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone so that you can record your beatbox.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD42B1082CA269E800352666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone so that you can record your beatbox.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD42B10A2CA269E800352666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"gary-for-beatbox/Preview Content\"";
+				DEVELOPMENT_TEAM = P8L4LGS728;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecollabagepatch.gary-for-beatbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD42B10B2CA269E800352666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"gary-for-beatbox/Preview Content\"";
+				DEVELOPMENT_TEAM = P8L4LGS728;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecollabagepatch.gary-for-beatbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD42B10D2CA269E800352666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8L4LGS728;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecollabagepatch.gary-for-beatboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gary-for-beatbox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gary-for-beatbox";
+			};
+			name = Debug;
+		};
+		BD42B10E2CA269E800352666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8L4LGS728;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecollabagepatch.gary-for-beatboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gary-for-beatbox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gary-for-beatbox";
+			};
+			name = Release;
+		};
+		BD42B1102CA269E800352666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8L4LGS728;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecollabagepatch.gary-for-beatboxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "gary-for-beatbox";
+			};
+			name = Debug;
+		};
+		BD42B1112CA269E800352666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8L4LGS728;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thecollabagepatch.gary-for-beatboxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "gary-for-beatbox";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD42B0DB2CA269E600352666 /* Build configuration list for PBXProject "gary-for-beatbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD42B1072CA269E800352666 /* Debug */,
+				BD42B1082CA269E800352666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD42B1092CA269E800352666 /* Build configuration list for PBXNativeTarget "gary-for-beatbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD42B10A2CA269E800352666 /* Debug */,
+				BD42B10B2CA269E800352666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD42B10C2CA269E800352666 /* Build configuration list for PBXNativeTarget "gary-for-beatboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD42B10D2CA269E800352666 /* Debug */,
+				BD42B10E2CA269E800352666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD42B10F2CA269E800352666 /* Build configuration list for PBXNativeTarget "gary-for-beatboxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD42B1102CA269E800352666 /* Debug */,
+				BD42B1112CA269E800352666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BDB11B552CA289BC00602110 /* XCRemoteSwiftPackageReference "FDWaveformView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fulldecent/FDWaveformView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		BDB11B5A2CA2A3AF00602110 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BDB11B562CA289BC00602110 /* FDWaveformView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDB11B552CA289BC00602110 /* XCRemoteSwiftPackageReference "FDWaveformView" */;
+			productName = FDWaveformView;
+		};
+		BDB11B5B2CA2A50200602110 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDB11B5A2CA2A3AF00602110 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BD42B0EE2CA269E800352666 /* gary_for_beatbox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD42B0EF2CA269E800352666 /* gary_for_beatbox.xcdatamodel */,
+			);
+			currentVersion = BD42B0EF2CA269E800352666 /* gary_for_beatbox.xcdatamodel */;
+			path = gary_for_beatbox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BD42B0D82CA269E600352666 /* Project object */;
+}
